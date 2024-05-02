@@ -1,0 +1,152 @@
+h1{
+    padding-bottom: 20px;
+}
+
+article {
+    padding: 138px 60px 0 60px;
+    background-color: #F8F7F4;
+}
+
+.panel{
+    justify-content: space-around;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+form {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 50%;
+
+    padding: 60px;
+    border-radius: 20px;
+    background-color: #A7CCED;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputs {
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.info {
+    gap: 20px;
+    flex-direction: column;
+}
+
+input, textarea {
+    border: 0;
+    border-bottom: 3px solid #304D6D;
+    outline: none;
+
+    width: 100%;
+
+    background-color: #A7CCED;
+}
+
+label {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    align-items: center;
+    color: #304D6D;
+    cursor: text;
+}
+
+input, textarea, label {
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+
+    transition: 0.2s ease-in-out;
+}
+
+.field {
+    position: relative;
+}
+
+#message-field{
+    flex-grow: 2;
+}
+
+.field #message{
+    height: 93%;
+    align-self: flex-end;
+    resize: none;
+}
+
+input:focus + label,
+input:valid + label,
+textarea:focus + label,
+textarea:valid + label{
+    color: #82A0BC;
+    font-size: 0.75em;
+    top: -25px;
+    pointer-events: none;
+}
+
+input:focus {
+    border-bottom: 3px solid #82A0BC;
+}
+
+#submit{
+    background-color: #304D6D;
+    color: #F8F7F4;
+    font-size: 20px;
+    border: 0;
+    border-radius: 20px;
+    
+    width: 50%;
+    align-self: center;
+}
+
+#submit:hover{
+    background-color: #82A0BC;
+}
+
+.map{
+    padding-bottom: 10px;
+}
+.information{
+    flex-direction: column;
+    gap: 10px;
+}
+
+#result{
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 800px){
+
+    h1{
+        text-align: center;
+    }
+    
+    article{
+        padding: 138px 0 0 0;
+    }
+    .panel{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    form{
+        width: 80%;
+        padding: 20px
+    }
+
+    .map{
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px){
+    .inputs{
+        flex-direction: column;
+    }
+}
