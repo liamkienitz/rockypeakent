@@ -14,20 +14,35 @@ article {
 
 .showcase{
     margin-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .showcase-image{
     flex-grow: 2;
+    width: 60%;
     justify-content: center;
+    padding: 60px 0;
+}
+
+.showcase-image img{
+    width: 70%;
+    object-fit: contain;
+}
+
+.map{
+    align-self: center;
+}
+
+.showcase-information{
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .showcase-information hr{
     margin-bottom: 5px;
-}
-
-.showcase-information{
-    flex-direction: column;
-    flex-grow: 1;
 }
 
 .information-text{
@@ -35,8 +50,14 @@ article {
     gap: 5px;
 }
 
-.showcase-information{
-    justify-content: space-around;
+.information-units{
+    width: 100%;
+    gap: 30px;
+    text-align: center;
+}
+
+.column{
+    flex-direction: column;
 }
 
 .showcase-information a, .header a{
@@ -57,6 +78,15 @@ article {
     background-color: #82A0BC;
 }
 
+.fully-leased{
+    background-color: #f24c4c !important;
+    cursor:default;
+}
+
+.fully-leased:hover{
+    background-color: #f24c4c !important;
+}
+
 .photos-header{
     margin-bottom: 30px;
 }
@@ -71,6 +101,7 @@ article {
 .image{
     width: 300px;
     height: 300px;
+    background-color: #F8F7F4;
 }
 
 .image img{
@@ -90,8 +121,7 @@ article {
         align-self: center;
     }
 
-    .showcase{
-        flex-direction: column;
-        gap: 20px;
+    .header a{
+        display: none;
     }
 }

@@ -14,6 +14,7 @@ article {
 }
 
 form {
+    position: relative;
     flex-direction: column;
     justify-content: space-evenly;
     gap: 20px;
@@ -21,7 +22,7 @@ form {
 
     padding: 60px;
     border-radius: 20px;
-    background-color: #A7CCED;
+    background-color: #a2bbd0;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -42,7 +43,7 @@ input, textarea {
 
     width: 100%;
 
-    background-color: #A7CCED;
+    background-color: #a2bbd0;
 }
 
 label {
@@ -110,14 +111,16 @@ input:focus {
 .map{
     padding-bottom: 10px;
 }
+
 .information{
     flex-direction: column;
     gap: 10px;
+    width: 30%;
 }
 
 #result{
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
 }
 
 @media (max-width: 800px){
@@ -137,7 +140,7 @@ input:focus {
 
     form{
         width: 80%;
-        padding: 20px
+        padding: 80px 20px;
     }
 
     .map{
