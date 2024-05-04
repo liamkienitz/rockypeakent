@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Rent | Rocky Peak Enterprises</title>
-    <meta name="description" content="Discover the perfect workspace for your needs. From sleek offices to dynamic coworking spaces, find the ideal environment to fuel your success.">
+    <title>Home | Rocky Peak Enterprises</title>
+    <meta name="description" content="Explore our extensive portfolio of properties today and let us help you find your ideal leasing solution. Welcome to Rocky Peak Enterprises.">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -17,23 +17,22 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/for-rent.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/fonts.css">
 </head>
 
 <body>
     <header class="flex">
        <nav class="flex poppins-regular">
-
             <!-- Desktop Header -->
             <a href="#" class="hamburger-icon flex"><span class="material-symbols-outlined">menu</span></a>
-            <a class="page desktop-button" href="home">
+            <a class="page desktop-button active" href="home">
                 <p>Home</p>
-                <hr class="nav-accent">
-            </a>
-            <a class="page desktop-button active" href="for-rent">
-                <p>For Rent</p>
                 <hr class="nav-accent nav-accent-active">
+            </a>
+            <a class="page desktop-button" href="for-rent">
+                <p>For Rent</p>
+                <hr class="nav-accent">
             </a>
             <a class="page desktop-button" href="contact-us">
                 <p>Contact Us</p>
@@ -45,15 +44,14 @@
                 <div class="flex mobile-menu-close">
                     <a class="close-icon"><span class="big-text material-symbols-outlined button white-button">close</span></a>
                 </div>
-                
                 <div class="flex mobile-menu-navigation">
-                    <a class="page" href="home">
+                    <a class="page active" href="home">
                         <p>Home</p>
-                        <hr class="nav-accent">
-                    </a>
-                    <a class="page active" href="for-rent">
-                        <p>For Rent</p>
                         <hr class="nav-accent nav-accent-active">
+                    </a>
+                    <a class="page" href="for-rent">
+                        <p>For Rent</p>
+                        <hr class="nav-accent">
                     </a>
                     <a class="page" href="contact-us">
                         <p>Contact Us</p>
@@ -64,42 +62,29 @@
        </nav>
     </header>
 
-    <article>
-        <h1 class="poppins-bold">Buildings</h1>
-        <div class="building-container flex">
-            <div class="building flex plus-jakarta-regular">
-                <img src="images/1313/1313 7th Ave (1).jpg">
-                <div class="building-text flex">
-                    <div class="building-title">
-                        <h3>1313 7th Ave</h3>
-                    </div>
-                
-                    <a href="1313-7th-ave">Learn More</a>
+    <article class="flex">
+        <h1 class="poppins-bold">Rocky Peak Enterprises</h1>
+        <div class="header-image">
+            <img src="images/Stock/Mountain Range.jpg">
+        </div>
+
+        <div class="panel flex">
+            <div class="our-properties flex plus-jakarta-regular">
+                <div class="browse-properties flex">
+                    <p class="introduction">At Rocky Peak, we prioritize customer satisfaction above all else, striving to exceed your expectations with our unparalleled service and attention to detail. Explore our extensive portfolio of properties today and let us help you find your ideal leasing solution. Welcome to Rocky Peak Enterprises.</p>
+                    <a class="flex" href="for-rent">
+                        <p>Browse Properties</p>
+                        <span class="material-symbols-outlined">arrow_right_alt</span>
+                    </a>
                 </div>
             </div>
 
-            <div class="building flex plus-jakarta-regular">
-                <img src="images/102/IMG_2666 - Copy.JPG">
-                <div class="building-text flex">
-                    <div class="building-title">
-                        <h3>108 Industrial Road #2</h3>
-                    </div>
-                
-                    <a href="108-industrial-road-2">Learn More</a>
-                </div>
-            </div>
-
-            <div class="building flex plus-jakarta-regular">
-                <img src="images/402/20180821_113144.jpg">
-                <div class="building-text flex">
-                    <div class="building-title">
-                        <h3>204 10th Ave Carstairs</h3>
-                    </div>
-                
-                    <a href="204-10-ave-carstairs">Learn More</a>
-                </div>
+            <div class="contact-us flex poppins-regular">
+                <h2>Want to send us a message?</h2>
+                <a class="contact-us-button" href="contact-us">Contact Us</a>
             </div>
         </div>
+        
     </article>
 
     <script src="scripts/scripts.js"></script>
