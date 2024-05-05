@@ -1,5 +1,7 @@
 RewriteEngine on
 
+DirectoryIndex home.html
+
 RewriteOptions inherit
 RewriteCond %{HTTP_HOST} ^.*$
 RewriteRule ^/?$ "https\:\/\/rockypeakent\.com\/home" [R=301,L]
