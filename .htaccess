@@ -1,24 +1,7 @@
 RewriteEngine on
 
 DirectoryIndex home.html
-DirectorySlash on
-
-RewriteOptions inherit
-RewriteCond %{HTTP_HOST} ^.*$
-RewriteRule ^/?$ "https\:\/\/rockypeakent\.com\/home" [R=301,L]
-
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)/?$ $1 [L,QSA]
-
-RewriteRule ^for-rent/?$ for-rent [NC,L]
-RewriteRule ^home/?$ home [NC,L]
-RewriteRule ^contact-us/?$ contact-us [NC,L]
-RewriteRule ^108-industrial-road-2/?$ 108-industrial-road-2 [NC,L]
-RewriteRule ^204-10-ave/?$ 204-10-ave [NC,L]
-RewriteRule ^1313-7th-ave/?$ 1313-7th-ave [NC,L]
-
+RewriteRule ^(.*)/+$ $1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([/.]+)? $1.html [NC,L]
