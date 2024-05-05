@@ -1,6 +1,7 @@
 RewriteEngine on
 
 DirectoryIndex home.html
+DirectorySlash on
 
 RewriteOptions inherit
 RewriteCond %{HTTP_HOST} ^.*$
